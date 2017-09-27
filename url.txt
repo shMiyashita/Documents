@@ -4,3 +4,5 @@ http://2vr.jp/2016/05/10/unity-hololens-tips/
 *Unity未経験者がHoloLensアプリの開発をしてみた
 https://future-architect.github.io/articles/20170421/
 
+*hololensへデバイスポータル経由で
+http://curlune.hatenablog.com/entry/2017/02/07/010500
