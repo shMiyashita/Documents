@@ -15,13 +15,26 @@ namespace ColorControl {
         UIButton sendButton;
         UITextField textField;
         
-        ublic string api = "https://api/holographic/input/keyboard/text?text=";
+        ublic string api = "http://127.0.0.1:10080/api/holographic/input/keyboard/text?text=";
+        
+        private String HololensName()
+        {
+            if (ipAddress == "192.168.1.1")
+            {
+                return "hololens1";
+            }
+            else
+            {
+                return "unKnown";
+            }
+        }
 
         public override void ViewDidLoad ()
         {
             //タイトル部
             base.ViewDidLoad ();
-            Title = "Send Text To Hololens";
+            devName = HololensName();
+            Title = "Send Text To Hololens @" + devName;
             View.BackgroundColor = UIColor.White;
 
             //フォーム部
