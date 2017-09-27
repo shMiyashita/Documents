@@ -23,10 +23,7 @@ namespace ColorControl {
             {
                 return "hololens1";
             }
-            else
-            {
-                return "unKnown";
-            }
+            else return "unKnown";
         }
 
         public override void ViewDidLoad ()
