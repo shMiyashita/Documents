@@ -14,6 +14,8 @@ namespace ColorControl {
         
         UIButton sendButton;
         UITextField textField;
+        
+        ublic string api = "https://api/holographic/input/keyboard/text?text=";
 
         public override void ViewDidLoad ()
         {
@@ -35,7 +37,7 @@ namespace ColorControl {
 
             sendButton.TouchUpInside += (sender, e) =>
             {
-                doSend();
+                WebRequest.Create(api + textField.Text);
             };
 
             View.Add (textField);
