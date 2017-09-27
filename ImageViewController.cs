@@ -15,7 +15,7 @@ namespace ColorControl {
         UIButton sendButton;
         UITextField textField;
         
-        ublic string api = "http://127.0.0.1:10080/api/holographic/input/keyboard/text?text=";
+        public string api = "http://127.0.0.1:10080/api/holographic/input/keyboard/text?text=";
         
         private String HololensName()
         {
